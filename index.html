@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Test React Application</title>
+  </head>
+
+  <body>
+    <div id="react-app"></div>
+    <script src="https://cdn.jsdelivr.net/react/0.14.0-rc1/react.js"></script>
+    <script src="https://cdn.jsdelivr.net/react/0.14.0-rc1/react-dom.js"></script>
+  </body>
+
+  <script>
+    var rootElement =
+      React.createElement('div', {},
+        React.createElement('h1', {}, "Contacts"),
+        React.createElement('ul', {},
+          React.createElement('li', {},
+            React.createElement('h2', {}, "Reid Collins"),
+            React.createElement('a', {href: 'mailto:hihelloreid@gmail.com'}, "hihelloreid@gmail.com")
+          ),
+          React.createElement('li', {},
+            React.createElement('h2', {}, "Fname Lname"),
+            React.createElement('a', {href: 'mailto:fnamelname@gmail.com'}, "fnamelname@gmail.com")
+          )
+        )
+      )
+
+    ReactDOM.render(rootElement, document.getElementById('react-app'))
+
+  </script>
+</html>
